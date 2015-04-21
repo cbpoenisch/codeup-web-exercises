@@ -1,0 +1,36 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.stripes {
+	border: 1px solid black;
+	width: 352px;
+	height: 175px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.red {
+	background-color: red;
+	width: 350px;
+	padding: 0px;
+}
+
+.white {
+	background-color: white;
+	width: 350px;
+	padding: 0px;
+
+}
+
+.blue {
+	background-color: blue;
+	float:left;
+	width: 150px;
+	height: 97px;
+	border: 1px solid black;
+}

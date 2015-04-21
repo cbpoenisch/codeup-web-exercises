@@ -1,0 +1,29 @@
+
+#header { color: yellow;
+   		  text-decoration: underline;
+
+}
+
+.section { padding: 10px;
+			border: 5px solid sienna;
+			margin: 30px;
+			background-color: black; 
+
+}
+
+body { background-color: blue; 
+	   background-image: url(http://images2.layoutsparks.com/1/209256/sleepy-pup-cute-collage.jpg); 
+	   font-family: Arial;
+	   color:white;
+}
+
+ol {list-style: upper-alpha;}
+ul{list-style: square;}
+
+nav { padding: 5px;
+		border: 5px solid sienna;
+		margin: 30px;
+		background-color: black;
+
+}
+ 

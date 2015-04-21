@@ -1,0 +1,77 @@
+/**
+ * CONTENTS
+ *
+ * SETTINGS
+ * Global...............Global styles and config.
+ *
+ * GENERIC
+ * Normalize.css........A level playing field.
+ * Box-sizing...........Better default `box-sizing`.
+ * Layout...............Layout
+
+ ...
+
+**/
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+	background-color: #e1e1e1;
+}
+
+aside {
+	background-color: white;
+	margin: 20px;
+	border-radius: 8px;
+}
+
+footer {
+	margin: 100px;
+	width: 400px;
+
+}
+
+section {
+	background-color: black;
+	color: white; 
+	float: left;
+	padding: 20px;
+	width: 450px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 20px;
+}
+
+
+.footer_links {
+	float: left;
+}
+
+.link_img {
+	width: 100px;
+	height: 100px;
+	margin: 10px;
+	padding: 10px;
+}
+
+.top_nav {
+	background-color: white;
+	border: solid black;
+	width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.left_nav {
+	float: left;
+	border: solid black;
+}
+
+.left_nav_menu {
+	margin-right: 10px;
+}

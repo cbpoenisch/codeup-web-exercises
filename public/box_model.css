@@ -1,0 +1,104 @@
+/**
+ * CONTENTS
+ *
+ * SETTINGS
+ * Box-sizing...........Better default `box-sizing`.
+ *
+ * HEADER	
+ * BODY
+ 
+
+
+
+ ...
+
+**/
+
+/*-------------------*\
+  SETTINGS
+\*-------------------*/
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+/*-------------------*\
+  HEADER
+\*-------------------*/
+
+header { 
+	width: 420px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 25px;
+	color: violet;
+	text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87
+
+}
+.codeupribbon{
+	position: fixed;
+	top: 1px;
+	right: 1px;
+}
+
+
+/*-------------------*\
+  BODY
+\*-------------------*/
+
+.boxes{
+	width: 450px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.box {
+	border: 1px solid black;
+	width: 72px;
+	height: 72px;
+	padding: 10px;
+	margin: 25px;
+	font-style: bold; 
+	color: white;
+	box-shadow: -10px 15px 15px 1px #888888;
+	text-shadow: black 0.1em 0.1em 0.2em;
+	float: left;
+}
+.box:hover {
+	box-shadow: -10px 15px 15px 3px #888888;
+	 color: black;
+}
+.arrow{
+	position: relative;
+	top: -80px;
+	right: -40px;
+}
+
+
+#one{
+	background-color: #D00000;
+}
+#two{
+	background-color: orange;
+
+}
+
+#three{
+	background-color: yellow;
+}
+
+#four{
+	background-color: green;
+}
+
+#five{
+	background-color: blue;
+}
+
+#six{
+	background-color: purple;
+}

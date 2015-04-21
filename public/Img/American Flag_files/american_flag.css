@@ -1,0 +1,25 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+.container {
+	width: 450px;
+	border: 1px solid black;
+
+}
+
+.red {
+	background-color: red;
+}
+
+.white {
+	background-color: white;
+}
+
+.blue {
+	background-color: blue
+	float:left;
+}
