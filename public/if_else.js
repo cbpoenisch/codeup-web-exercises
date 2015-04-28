@@ -3,7 +3,7 @@
 var colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 var color = colors[Math.floor(Math.random()*colors.length)];
 
-var favorite = 'red'; // TODO: change this to your favorite color from the list
+var favorite = 'blue'; // TODO: change this to your favorite color from the list
 
 // TODO: Create a block of if/else statements to check for every color except indigo and violet.
 // TODO: When a color is encountered log a message that tells the color, and an object of that color.
@@ -14,3 +14,18 @@ var favorite = 'red'; // TODO: change this to your favorite color from the list
 
 // TODO: Using the ternary operator, conditionally log a statement that
 //       says whether the random color matches your favorite color.
+
+if (color == 'red') {
+	console.log("Apples are red");
+} else if (color == 'orange') {
+	console.log("Oranges are orange");
+} else if (color == 'yellow') {
+	console.log("Lemons are yellow");
+} else if (color == 'green') {
+	console.log("Grass is green");
+} else if (color == 'blue') {
+	console.log("The sky is blue");
+} else { 
+	console.log("I don not know anything by that color")
+}
+(favorite == color) ? console.log("That's my favorite color!") : console.log("That is not my favorite color");
