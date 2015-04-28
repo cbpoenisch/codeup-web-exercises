@@ -5,6 +5,7 @@ html {
     box-sizing: inherit;
 }
 
+
 .container {
     margin: 0 auto;
     width: 80%;
@@ -24,6 +25,7 @@ html {
 .column {
     float: left;
     padding: 10px;
+    width: 100%;
 }
 
 .column.one-half {
@@ -51,6 +53,10 @@ html {
 
 .column.three-eighth {
 	width: 37.5%;
+}
+
+.column.seven-eighth {
+    width: 87.5%
 }
 
 .column.two-fourth { 

@@ -3,50 +3,68 @@
 
 <head>
 	<title>Death Star</title>
-	<link rel="stylesheet" type="css" href="normalize.css">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" type="text/css" href="grid.css">
 	<link rel="stylesheet" type="text/css" href="layout.css">
 </head>
 
 <body>
-	<main>
+		<section class="container">
 
-		<!--This is my top nav bar-->
-		<nav class="top_nav">
-			<p>Menu</p>
-		</nav>
+			<!--This is my top nav bar-->
 
-		<!--This is my left nav bar-->
-		<aside class="left_nav">
-			<nav class="left_nav_menu">
-				<ul>
-					<li><a href="https://www.facebook.com">Facebook</a></li>
-					<li><a href="https://www.twitter.com">Twitter</a>
-					</li>
-					<li><a href="https://www.google.com">Google</a></li>
+			<div class="row">
+				<div class="column">
+					<nav class="global-nav">Menu</nav>
+				</div>
+			</div>
+
+			<!--This is my left nav bar-->
+		
+		<div class="row">
+			<div class="column one-eighth">
+				<aside class="left_nav">
+					<nav class="left_nav_menu">
+						<ul>
+							<li><a href="https://www.facebook.com">Facebook</a></li>
+							<li><a href="https://www.twitter.com">Twitter</a>
+							</li>
+							<li><a href="https://www.google.com">Google</a></li>
+						</ul>
+					</nav>
+				</aside>
+			</div>
+
+	<!--This is my right-content area-->
+		
+			<div class="column one-half">
+				<section class="main-content offset-one-half">
+					<p>
+						<img src="img/deathstar.jpg" class="deathstar">
+					</p>
+
+					<p>A Death Star was a moon-sized Imperial military battlestation armed with a planet-destroying superlaser.
+					</p>
+
+				</section>
+			</div>
+		</div>
+
+	<!--This is my footer menu-->
+
+		<footer class="row">
+			<div class="column">
+				<ul class="footer-list">
+					<li class="footer_links"><a href="http://starwars.wikia.com/wiki/Death_Star">Wookiepedia</a></li>
+					<li class="footer_links"><a href="http://www.starwars.com/">Star Wars Website</a></li>
+					<li class="footer_links"><a href="http://www.imdb.com/title/tt0076759/">Star Wars IMDB</a></li>
 				</ul>
-			</nav>
-		</aside>
+			
+			<br>&copy; Copyright 2015.<br>
 
-		<!--This is my right-content area-->
-		<section>
-			<p>
-				<img src="img/deathstar.jpg" class="deathstar">
-			</p>
-
-			<p>A Death Star was a moon-sized Imperial military battlestation armed with a planet-destroying superlaser.
-			</p>
-		</section>
-	</main>
-
-	<footer>
-		<ul>
-			<li class="footer_links"><a href="http://starwars.wikia.com/wiki/Death_Star"><img src="img/wookie.png" class="link_img"></a></li>
-			<li class="footer_links"><a href="http://www.starwars.com/"><img src="img/star_wars.png" class="link_img"</li>
-			<li class="footer_links"><a href="http://www.imdb.com/title/tt0076759/"><img src="img/imdb.jpg" class="link_img"</li>
-		</ul>
-
-		<p class="copyright">&copy; Copyright 2015.</p>
-	</footer>
+			</div>
+		</footer>
+	</section>
 </body>
 
 

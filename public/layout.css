@@ -2,16 +2,17 @@
  * CONTENTS
  *
  * SETTINGS
- * Global...............Global styles and config.
- *
+
  * GENERIC
  * Normalize.css........A level playing field.
  * Box-sizing...........Better default `box-sizing`.
  * Layout...............Layout
 
- ...
-
 **/
+
+/*-------------------*\
+  Generic
+\*-------------------*/
 
 html {
     box-sizing: border-box;
@@ -20,36 +21,74 @@ html {
     box-sizing: inherit;
 }
 
+
+
+/*-------------------*\
+  Top Nav Style
+\*-------------------*/
+
+.global-nav {
+	height:60px;
+	background-color: white;
+	border: 2px solid black;
+	border-radius: 8px;
+	margin: 50px;
+}
+
+/*-------------------*\
+  Body Style
+\*-------------------*/
+
 body {
 	background-color: #e1e1e1;
 }
 
-aside {
+.main-content {
+
+}
+
+.deathstar {
+	width: 100%;
+	height: auto;
+}
+
+/*-------------------*\
+  Left Nav Style
+\*-------------------*/
+
+.left_nav {
+	float: left;
+	border: solid black;
 	background-color: white;
-	margin: 20px;
 	border-radius: 8px;
 }
 
-footer {
-	margin: 100px;
-	width: 400px;
 
+.left_nav_menu {
+	margin-right: 10px;
 }
 
-section {
-	background-color: black;
-	color: white; 
-	float: left;
-	padding: 20px;
-	width: 450px;
+/*-------------------*\
+  Footer Style
+\*-------------------*/
+
+footer {
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 20px;
-}
+	width: 400px;
+	background-color: white;
+	border: 2px solid black;
+	border-radius: 8px;
 
+
+}
 
 .footer_links {
 	float: left;
+}
+
+.footer-list {
+	
 }
 
 .link_img {
@@ -57,21 +96,4 @@ section {
 	height: 100px;
 	margin: 10px;
 	padding: 10px;
-}
-
-.top_nav {
-	background-color: white;
-	border: solid black;
-	width: 600px;
-	margin-right: auto;
-	margin-left: auto;
-}
-
-.left_nav {
-	float: left;
-	border: solid black;
-}
-
-.left_nav_menu {
-	margin-right: 10px;
 }
