@@ -5,10 +5,9 @@
 </head>
 <body>
     <script>
-
+    	do {
     	var random = Math.floor((Math.random()*50)+1);
-    	if (random % 2 == 0) 
-    	while(random % 2 == 0){ 
+  		} while(random % 2 == 0){ 
     		Math.floor((Math.random()*50)+1);
     	}
     	console.log('Random number generated is ' . random);
