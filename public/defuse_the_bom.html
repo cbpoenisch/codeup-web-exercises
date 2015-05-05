@@ -11,7 +11,10 @@
     <script>
         var detonationTimer = 5;
         var interval = 1000;
+        var intervalID = setInterval(updateTimer, interval);
+        var message = document.getElementById('message');
 
+        message.innerHTML.style.color = "blue";
 
         // TODO: This function needs to be called once every second
         function updateTimer()
@@ -19,13 +22,15 @@
             if (detonationTimer == 0) {
                 alert('EXTERMINATE!');
                 document.body.innerHTML = '';
+                document.body.style['background-color'] = "red";
             } else if (detonationTimer > 0) {
                 document.getElementById('timer').innerHTML = detonationTimer;
+                document.body.style['background-color'] = "green"
             }
             detonationTimer--;
         }
 
-         var intervalID = setInterval(updateTimer, interval);
+         
        
 
         // TODO: When this function runs, it needs to
