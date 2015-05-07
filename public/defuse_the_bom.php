@@ -4,15 +4,12 @@
     <title>Defuse the BOM</title>
 </head>
 <body>
-    <h2 id="message">This BOM will self destruct in <span id="timer">15</span> seconds...</h2>
+    <h2 id="message">This BOM will self destruct in <span id="timer">5</span> seconds...</h2>
 
     <button id="defuser">Defuse the BOM</button>
 
     <script>
-        var detonationTimer = 15;
-        var interval = 1000;
-        var intervalID = setInterval(updateTimer, interval);
-        var message = document.getElementById('message');
+        var detonationTimer = 5;
 
         // TODO: This function needs to be called once every second
         function updateTimer()
@@ -20,23 +17,18 @@
             if (detonationTimer == 0) {
                 alert('EXTERMINATE!');
                 document.body.innerHTML = '';
-                document.body.style['background-color'] = "red";
             } else if (detonationTimer > 0) {
                 document.getElementById('timer').innerHTML = detonationTimer;
-                document.body.style['background-color'] = "green";
             }
+
             detonationTimer--;
         }
-
-         
-       
 
         // TODO: When this function runs, it needs to
         // cancel the interval/timeout for updateTimer()
         function defuseTheBOM()
         {
-            clearInterval(intervalID); 
-            document.body.style['background-color'] = "blue";           
+
         }
 
         // Don't modify anything below this line!

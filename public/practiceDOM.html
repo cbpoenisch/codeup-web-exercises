@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head
+	<title>DOM's</title>
+</head>
+
+<body>
+	<h1 id="heading-1">Hello Codeup!</h1>
+
+	<p class="odd-paragraph"> 
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+	<p class="even-paragraph"> 
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+	<p class="odd-paragraph">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+	<p class="even-paragraph">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+
+	<a href="http://google.com" id="search-link">Best Search Engine Ever</a>
+
+<script type="text/javascript">
+
+var theHeading		= document.getElementById("heading-1");
+var evenParagraphs	= document.getElementsByClassName("even-paragraph");
+var paragraphs 		= document.getElementsByTagName("p");
+
+
+theHeading.innerHTML = 'Good Evening Ladies and Gentlemen';
+
+for (var i = 0; i < evenParagraphs.length; i++) {
+	evenParagraphs[i].style['background-color'] = "#ddd";
+}
+
+document.getElementById("search-link").attributes['href'].value = "http://codeup.com";
+
+//overly verbose broken down version we won't really use
+
+// var delay = 5000;
+// var doAlert = function(){
+// 	alert("Got Cha!");
+// };
+
+// setTimout(doAlert,delay);
+
+// // shorter more easy-to-use version
+
+// setTimout(function(){
+// 	alert("Got cha!");
+// }, 5000);
+
+// //DOM Events
+
+theHeading.addEventListener("click", function(){
+	alert('ow!');
+});
+
+theHeading.addEventListener("mouseenter", function(){
+	console.log('ow!');
+});
+
+
+//Key down and up etc.
+
+<input type="text" id ="my-input">
+
+var inputTag	= document.getElementById("my-imput");
+
+inputTag.addEventListener("keypress")
+
+
+
+
+
+
+
+</script>
+
+</body>
+
+</html>

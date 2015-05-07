@@ -5,14 +5,27 @@
 </head>
 <body>
     <script>
-    	       
+    "use strict";
+    
+    var myNameIs = 'Crystal'
+    var random = Math.floor((Math.random()*100)+1);
+
+    function sayHello(name){
+    	console.log('Hello from' + ' ' + myNameIs);
+    }
+    
+    sayHello(myNameIs);
+
+    function isOdd(number){
+ 	
+ 	(number % 2 != 0) ? "Number is odd" : "Number is even";
+
+    }
+
     </script>
 </body>
 </html>
 
-
-
-var myNameIs = 'Bob'; // todo: Fill in your name here.
 
 // todo:
 // Create a function called 'sayHello' that takes a parameter 'name'.

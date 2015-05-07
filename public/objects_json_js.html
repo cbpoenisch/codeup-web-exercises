@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <script>
+    "use strict";
+
+	// todo:
+	// Create an array of objects that represent books.
+
+	var books = [{
+		"Title" : "Slaughterhouse Five",
+		"Author" : {"firstName" : "Kurt ",
+					"lastName" : "Vonnegut"}
+	},{
+		"Title" : "Roads to Dominion",
+		"Author" : {"firstName" : "Sarah ",
+					"lastName" : "Diamond"}
+	},{
+		"Title" : "Walking With the Wind",
+		"Author" : {"firstName" : "John ",
+					"lastName" : "Lewis"}
+	},{
+		"Title" : "Wuthering Heights",
+		"Author" : {"firstName" : "Emily ",
+					"lastName" : "Brontë"}
+	},{
+		"Title" : "Bossy Pants",
+		"Author" : {"firstName" : "Tina ",
+					"lastName" : "Fey"}
+	}];
+
+	// Each book should have a title and an author.
+	// The book author should be an object with a firstName and lastName.
+	// Be creative and add at least 5 books to the array
+	//var books = [todo];
+
+	// log out the books array
+	console.log(books);
+
+	// todo:
+	// Loop through the array of books using .forEach and print out the specified information about each one.
+	// start loop here
+	books.forEach(function(book, index){
+	    console.log("Book:" + (index+1));
+	    console.log("Title:" + book.Title);
+	    console.log("Author:" + book.Author.firstName + book.Author.lastName);
+	    console.log("---");
+	   });
+	// end loop here
+
+	</script>
+</body>
+</html>
