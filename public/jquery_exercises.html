@@ -3,11 +3,11 @@
 	<title>jQuery Exercises</title>
 </head>
 <body>
-	<header><h1 class="highlighted">Jquery Exercise</h1></header>
+	<header><h1>Jquery Exercise</h1></header>
 
 	<main>
 		<div>
-			<p class="highlighted"> 
+			<p> 
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -16,7 +16,7 @@
 				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 			</p>
 
-			<p class="highlighted">
+			<p>
 				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
@@ -27,10 +27,10 @@
 		</div>
 		<div>
 			<ul>
-				<li class="highlighted">Line Item</li>
-				<li class="highlighted">Line Item 2</li>
-				<li class="highlighted">Line Item 3</li>
-				<li class="highlighted">Line Item 4</li>
+				<li>Line Item</li>
+				<li>Line Item 2</li>
+				<li>Line Item 3</li>
+				<li>Line Item 4</li>
 			</ul>
 		</div>
 	</main>
@@ -42,7 +42,7 @@
 
 		$('document').ready(function() {
             $("li").css('font-size', '20px');
-            $('.highlighted').css('background-color', 'yellow')
+            $("h1, p, li").css('background-color', 'yellow')
         });
 	</script>
 
