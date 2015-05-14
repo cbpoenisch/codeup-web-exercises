@@ -8,6 +8,8 @@
 
     <button id="defuser">Defuse the BOM</button>
 
+    <script type="text/javascript" src= "js/jquery-1.11.3.js"></script>
+    
     <script>
         var detonationTimer = 5;
 
@@ -38,6 +40,9 @@
         // We will learn about events in the DOM lessons
         var defuser = document.getElementById('defuser');
         defuser.addEventListener('click', defuseTheBOM, false);
+
+
+
     </script>
 </body>
 </html>
