@@ -1,0 +1,52 @@
+<!Doctype <html>
+<html ng-app="controllerTest">
+<head>
+	<title>Controller Test</title>
+	<script type="text/javascript" src="/js/angular.min.js"></script>
+	<script type="text/javascript" src="/js/modelTest.js"></script>
+
+	<style type="text/css">
+
+	.inputForm {
+
+	}
+
+	</style>
+</head>
+
+<body>
+	<div class="inputForm" ng-controller="CartController as cart">
+		<form>
+			<label for="newItem">Create New Item</label>
+			<input type="text" id="newItem" ng-model="cart.user.newItem">
+
+			<label for="price">Price</label>
+			<input type="number" id="price" ng-model="cart.user.price" min="0">
+
+			<label for="quantity">Quantity</label>
+			<input type="number" id="quantity" ng-model="cart.user.quantity" min="0">
+
+			<input type="submit" value="Submit">
+		</form>
+	</div>
+
+	<table>
+		<tr>
+			<th>Item</th>
+			<th>Quantity</th>
+			<th>Price</th>
+			<th>Total</th>
+		</tr>
+		<tr>
+			<td> {{ cart.user.newItem }} </td>
+			<td> {{ cart.user.quantity }} </td>
+			<td> {{ cart.user.price | currency }} </td>
+			<td></td>
+
+		</tr>
+
+	</table>
+
+
+</body>
+</html>
