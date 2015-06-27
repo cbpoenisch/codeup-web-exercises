@@ -1,0 +1,89 @@
+<!Doctype <html>
+<html ng-app="modelTest">
+
+<head>
+<link href='http://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
+
+	<title>Model Test</title>
+
+	<style type="text/css">
+
+	.icon {
+		height: 150px;
+		width: 150px;
+		float: left;
+		position: relative;
+
+	}
+
+	input.ng-valid.ng-touched {
+ 		border: 2px solid green;
+ 	}
+
+ 	input.ng-invalid.ng-touched {
+ 		border: 2px solid red;
+ 	}
+
+ 	.vcard {
+ 		width: 600px;
+ 		height: 400px;
+ 		border: 1px solid black;
+ 		padding: 10px;
+ 		margin: 10px;
+ 		font-family: 'Handlee', cursive;
+ 		font-size: 2em;
+ 		border-radius: 10px;
+ 		text-align: right;
+
+ 	}
+
+	</style>
+</head>
+<body>
+
+<div class="wrapper">
+
+	<form>
+	    <label for="name">Name</label>
+	    <input type="text" id="name" ng-model="user.name" maxlength="50" required>
+
+	    <label for="email">eMail</label>
+	    <input type="email" id="email" ng-model="user.email" required>
+
+	    <label for="date_of_birth">Date of Birth</label>
+	    <input type="date" id="date_of_birth" ng-model="user.date">
+
+	    <label for="gitHub">Your GitHub Page</label>
+	    <input type="url" id="gitHub" ng-model="user.url">
+
+	    <select name="image" class="image" ng-model="user.image">
+			<option value="maybe">Maybe Fünke</option>
+			<option value="lucille" >Lucille Bluthe</option>
+			<option value="tobias">Tobias Fünke</option>
+		</select>
+
+
+
+	    <input type="submit" value="Submit">
+
+	</form>
+
+	<div class="vcard">
+ 		<span class="un">{{ user.name }}</span>
+	  	
+	  	<a class="email">{{ user.email }}</a>
+
+	  	<div class="gitHub">
+	    	<div class="gitHub">{{ user.url }}</div>
+	  	</div>
+	  	<div class="date_of_birth"> {{ user.date | date }} </div>
+	  	<img class="icon" ng-src="/img/{{ user.image }}.jpg"> 
+	</div>
+</div>
+
+
+<script type="text/javascript" src="/js/angular.min.js"></script>
+<script type="text/javascript" src="/js/modelTest.js"></script>
+
+</body>
+</html>
